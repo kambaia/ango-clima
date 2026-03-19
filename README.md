@@ -8,7 +8,7 @@ Aplicacao movel de meteorologia focada nas **18 provincias de Angola**, desenvol
 
 ### Inicio - `HomeScreen`
 
-<img src="screen-file/Home.png" width="300" alt="Tela Inicio" />
+<img src="screen-file/home.jpeg" width="300" alt="Tela Inicio" />
 
 Lista completa das 18 provincias de Angola com a temperatura actual de cada capital. Os dados sao carregados em paralelo (em lotes de 5 para evitar limites de API). Suporta pull-to-refresh e permite marcar provincias como favoritas. O botao de localizacao no cabecalho detecta a posicao do utilizador e navega directamente para os detalhes da cidade mais proxima.
 
