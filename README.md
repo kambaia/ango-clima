@@ -85,3 +85,66 @@ A navegacao e composta por um **Stack Navigator** na raiz (para o ecra de detalh
 | react-native-reanimated | ~4.1.6 | Animacoes nativas |
 | @expo/vector-icons | ^15.1.1 | Icones (Ionicons) |
 | OpenWeatherMap API | - | Dados meteorologicos e geocodificacao |
+
+---
+
+## Instalacao
+
+### Pre-requisitos
+
+- [Node.js](https://nodejs.org/) v18 ou superior
+- [pnpm](https://pnpm.io/) — gestor de pacotes usado no projecto
+- [Expo CLI](https://docs.expo.dev/get-started/installation/) — para correr a aplicacao
+- Aplicacao **Expo Go** no telemóvel (Android ou iOS) — para testar em dispositivo fisico
+- Chave de API do [OpenWeatherMap](https://openweathermap.org/api) (gratuita)
+
+---
+
+### 1. Clonar o repositorio
+
+```bash
+git clone https://github.com/SEU_USER/angoclima.git
+cd angoclima
+```
+
+### 2. Instalar dependencias
+
+```bash
+pnpm install
+```
+
+### 3. Configurar a chave de API
+
+Cria um ficheiro `.env` na raiz do projecto:
+
+```bash
+cp .env.example .env
+```
+
+Ou cria manualmente o ficheiro `.env` com o seguinte conteudo:
+
+```env
+EXPO_PUBLIC_OPENWEATHER_API_KEY=a_tua_chave_aqui
+```
+
+> Obtens a chave gratuitamente em https://openweathermap.org/api depois de criar uma conta.
+
+### 4. Correr o projecto
+
+```bash
+pnpm start
+```
+
+Isto inicia o servidor Expo. Em seguida escolhe como correr:
+
+| Comando | Plataforma |
+|---|---|
+| `pnpm android` | Emulador Android ou dispositivo via USB |
+| `pnpm ios` | Simulador iOS (apenas macOS) |
+| `pnpm web` | Navegador web |
+
+Ou abre a aplicacao **Expo Go** no teu telemóvel, lê o QR code que aparece no terminal e a app abre directamente.
+
+---
+
+> **Nota:** A permissao de localizacao e pedida automaticamente na primeira vez que usas o botao de localizacao. Certifica-te de que accepts a permissao para aceder ao clima da tua regiao.
